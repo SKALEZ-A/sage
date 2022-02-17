@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+}
+
+:root {
+  --primary-color:  rgb(46, 154, 193);
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background: white;
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: -5px 8px 25px rgba(0, 0, 0, 0.3);
+          box-shadow: -5px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.main-header .under-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: unset;
+  font-size: .7em;
+  padding-left: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-header .connect-link {
+  color: white;
+  background: #2e9ac1;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: .4em;
+  padding: .5em 2em;
+  margin: 1.5em;
+  font-size: large;
+}
+
+.main-header .connect-link:hover {
+  border: 2px solid blue;
+  background: white;
+  color: var(--primary-color);
+}
+
+.section {
+  background: white;
+  color: white;
+}
+
+.nom {
+  color: white;
+  padding: 3em 0 1.5em;
+  font-size: 1.5em;
+  background: #1c1b1b;
+  text-align: center;
+}
+
+.paragraph2 {
+  padding: 1em;
+  background: white;
+}
+
+.paragraph2 .nomb {
+  color: var(--primary-color);
+}
+
+.paragraph2 .nomb-btn {
+  color: white;
+  background: var(--primary-color);
+  border-radius: .4em;
+  padding: .7em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2em;
+  font-size: large;
+}
+
+.paragraph2 a {
+  color: white;
+}
+
+.about h3 {
+  padding: 1em;
+}
+
+.empty {
+  background: #1c1b1b;
+  width: auto;
+  padding: 2.5em;
+  display: block;
+}
+
+.null {
+  background: white;
+  width: auto;
+  padding: 03em;
+  display: block;
+  color: white;
+}
+
+.nin {
+  border: 3px solid white;
+  font-size: medium;
+  padding: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  border-radius: .6em;
+  margin: auto;
+}
+
+.nin a {
+  color: white;
+  padding: 2em 0 2em;
+}
+
+.nin:hover {
+  color: whitye;
+  background: var(--primary-color);
+}
+/*# sourceMappingURL=main.css.map */

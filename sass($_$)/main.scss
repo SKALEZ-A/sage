@@ -1,0 +1,106 @@
+body{margin: auto; padding: 2em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative;}
+
+.header{margin: auto; padding: 2em; width: 12em;}
+
+a{text-decoration: none; }
+
+.dapps-container{ text-align: center; align-content: space-between; padding: 0;}
+
+    .wallets-grid {display: grid; grid-template-columns: 1fr 1fr;
+        align-content: space-between; padding: 0; margin: auto;
+    // .wallets-grid{grid-template-columns: 1fr 1fr;}
+
+}
+.wallets{ margin: 1.5em; width: auto; box-shadow: 0px 1px 15px rgba(82, 77, 77, 0.297); border-radius: 15px;}
+
+#open{width: 6em;}
+
+.wallet-name{text-transform: capitalize; padding: 1em;}
+
+// @media only screen and(min-width:410px) {
+//     .wallets-grid{display: grid;
+//      grid-template-columns: 1fr 1fr 1fr;}
+// }
+// @media only screen and(min-width:550px) {
+//     .wallets-grid{display: grid;
+//      grid-template-columns: 1fr 1fr 1fr 1fr;}
+// }
+
+@media screen and (min-width:600px){
+    .wallets-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+    }
+}
+@media screen and (min-width:700px){
+    .wallets-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0;
+    }
+}
+
+ul li{list-style-type: none; align-content: space-around;}
+
+// ========== FOR FORM SPACE  =================//
+
+.model_container{ 
+    // display: none; 
+    opacity: 0; pointer-events: none;
+     justify-content: center; position: fixed;
+     height: 100vh; align-items: center; left: 0; right: 0; top: 0;
+     background-color: rgba(0, 0, 0, 0.1); margin: auto; display: flex;
+}
+
+// .model_container.show {
+//     opacity: 1; pointer-events: auto;
+// }
+.main-box {background: white; margin-top: 80%;
+    max-width: 100%; width: 350px;
+    border-radius: 1em; padding: 3em; 
+    text-align: center;}
+#close{display: flex; align-items: left; padding: 2em; 
+    margin: 0; border: 2px solid green; margin-bottom: 3em;}
+
+// ========== FOR ERROR SPACE  =================//
+
+
+.error-connecting .overlay{
+    display: none;
+    position: fixed; text-align: justify; z-index: 1;
+    height: 100vh; align-items: center; left: 0; right: 0; top: 0;
+    background-color: rgba(0, 0, 0, 0.1); margin: auto; 
+}
+
+.error-connecting .error-box-el{
+    position: fixed; top: 70%; border: 1em;
+    left: 50%; transform:translate(-50%, -50%) scale(0);
+    background: white; width: 450px;
+    z-index: 2; box-sizing: border-box; padding: 3em;
+}
+.error-box{
+    border: 1px solid red;
+    border-radius: 10px;
+    background: white;
+}
+
+.error-connecting .close-btn{ pointer-events: auto;
+    position: absolute; left: 20px;
+    top: 20px; width: 30px; height: 30px;
+    font-size: 25px; font-weight: 600; line-height: 30px;
+    text-align: center; 
+}
+
+.error-connecting.active .overlay {
+    display: block;
+}
+.error-connecting .btn{
+    display: inline; border-radius: .3em;
+    background: rgb(67, 146, 172); padding: 5px;
+    a {color: white;}
+}
+
+.error-connecting.active .error-box-el{
+    transition: all 300ms ease-in-out;
+    transform:translate(-50%, -50%) scale(1);
+}
+button{border: none; background: white; width: 100%;}

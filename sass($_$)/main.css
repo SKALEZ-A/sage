@@ -1,0 +1,196 @@
+body {
+  margin: auto;
+  padding: 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+}
+
+.header {
+  margin: auto;
+  padding: 2em;
+  width: 12em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dapps-container {
+  text-align: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding: 0;
+}
+
+.wallets-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding: 0;
+  margin: auto;
+}
+
+.wallets {
+  margin: 1.5em;
+  width: auto;
+  -webkit-box-shadow: 0px 1px 15px rgba(82, 77, 77, 0.297);
+          box-shadow: 0px 1px 15px rgba(82, 77, 77, 0.297);
+  border-radius: 15px;
+}
+
+#open {
+  width: 6em;
+}
+
+.wallet-name {
+  text-transform: capitalize;
+  padding: 1em;
+}
+
+@media screen and (min-width: 600px) {
+  .wallets-grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .wallets-grid {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+  }
+}
+
+ul li {
+  list-style-type: none;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.model_container {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-box {
+  background: white;
+  margin-top: 80%;
+  max-width: 100%;
+  width: 350px;
+  border-radius: 1em;
+  padding: 3em;
+  text-align: center;
+}
+
+#close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 2em;
+  margin: 0;
+  border: 2px solid green;
+  margin-bottom: 3em;
+}
+
+.error-connecting .overlay {
+  display: none;
+  position: fixed;
+  text-align: justify;
+  z-index: 1;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.error-connecting .error-box-el {
+  position: fixed;
+  top: 70%;
+  border: 1em;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  background: white;
+  width: 450px;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3em;
+}
+
+.error-box {
+  border: 1px solid red;
+  border-radius: 10px;
+  background: white;
+}
+
+.error-connecting .close-btn {
+  pointer-events: auto;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+
+.error-connecting.active .overlay {
+  display: block;
+}
+
+.error-connecting .btn {
+  display: inline;
+  border-radius: .3em;
+  background: #4392ac;
+  padding: 5px;
+}
+
+.error-connecting .btn a {
+  color: white;
+}
+
+.error-connecting.active .error-box-el {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+button {
+  border: none;
+  background: white;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
